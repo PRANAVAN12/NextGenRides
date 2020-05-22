@@ -53,6 +53,7 @@ public class CustomerServlet extends HttpServlet {
 			case "/updateU":
 				updateUser(request, response);
 				break;
+			
 			default:
 				listUser(request, response);
 				break;

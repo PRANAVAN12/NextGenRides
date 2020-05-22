@@ -11,7 +11,7 @@
         <h2>
         	<a href="newU">Add New User</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="listU">List All Users</a>
+        	<a href="listUser">List All Users</a>
         	
         </h2>
 	</center>
@@ -25,7 +25,7 @@
                 <th>Country</th>
                 <th>Actions</th>
             </tr>
-            <c:forEach var="user" items="${listUser}">
+            <c:forEach var="customer" items="${listUser}">
                 <tr>
                     <td><c:out value="${customer.id}" /></td>
                     <td><c:out value="${customer.name}" /></td>

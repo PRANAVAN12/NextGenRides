@@ -53,6 +53,7 @@ public class BookingServlet extends HttpServlet {
 			case "/update":
 				updateUser(request, response);
 				break;
+			
 			default:
 				listUser(request, response);
 				break;

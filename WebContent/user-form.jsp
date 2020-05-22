@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-	<title>User Management Application</title>
+	<title>NextGen Rides</title>
 </head>
 <body>
 	<center>
@@ -11,7 +11,7 @@
         <h2>
         	<a href="newU">Add New User</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="listU">List All Users</a>
+        	<a href="list">List All Users</a>
         	
         </h2>
 	</center>
