@@ -3,15 +3,15 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-	<title>User Management Application</title>
+	<title>NextGen Rides Application</title>
 </head>
 <body>
 	<center>
 		<h1>User Management</h1>
         <h2>
-        	<a href="new">Add New User</a>
+        	<a href="newU">Add New User</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="list">List All Users</a>
+        	<a href="listU">List All Users</a>
         	
         </h2>
 	</center>
@@ -27,14 +27,14 @@
             </tr>
             <c:forEach var="user" items="${listUser}">
                 <tr>
-                    <td><c:out value="${user.id}" /></td>
-                    <td><c:out value="${user.name}" /></td>
-                    <td><c:out value="${user.email}" /></td>
-                    <td><c:out value="${user.country}" /></td>
+                    <td><c:out value="${customer.id}" /></td>
+                    <td><c:out value="${customer.name}" /></td>
+                    <td><c:out value="${customer.email}" /></td>
+                    <td><c:out value="${customer.country}" /></td>
                     <td>
-                    	<a href="edit?id=<c:out value='${user.id}' />">Edit</a>
+                    	<a href="editU?id=<c:out value='${customer.id}' />">Edit</a>
                     	&nbsp;&nbsp;&nbsp;&nbsp;
-                    	<a href="delete?id=<c:out value='${user.id}' />">Delete</a>                    	
+                    	<a href="deleteU?id=<c:out value='${v.id}' />">Delete</a>                    	
                     </td>
                 </tr>
             </c:forEach>

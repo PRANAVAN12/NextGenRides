@@ -38,19 +38,19 @@ public class CustomerServlet extends HttpServlet {
 
 		try {
 			switch (action) {
-			case "/new":
+			case "/newU":
 				showNewForm(request, response);
 				break;
-			case "/insert":
+			case "/insertU":
 				insertUser(request, response);
 				break;
-			case "/delete":
+			case "/deleteU":
 				deleteUser(request, response);
 				break;
-			case "/edit":
+			case "/editU":
 				showEditForm(request, response);
 				break;
-			case "/update":
+			case "/updateU":
 				updateUser(request, response);
 				break;
 			default:
@@ -66,13 +66,13 @@ public class CustomerServlet extends HttpServlet {
 			throws SQLException, IOException, ServletException {
 		List<Customers> listUser = customerDao.getAllUser();
 		request.setAttribute("listUser", listUser);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("Customer-list.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("user-list.jsp");
 		dispatcher.forward(request, response);
 	}
 
 	private void showNewForm(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("CustomerRegistration.html");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
 		dispatcher.forward(request, response);
 	}
 
@@ -80,7 +80,7 @@ public class CustomerServlet extends HttpServlet {
 			throws SQLException, ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		Customers existingUser = customerDao.getUser(id);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("CustomerRegistration.html");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
 		request.setAttribute("customer", existingUser);
 		dispatcher.forward(request, response);
 
@@ -96,7 +96,7 @@ public class CustomerServlet extends HttpServlet {
 
 		Customers customer = new Customers(username, email, country, password, phone);
 		customerDao.saveUser(customer);
-		response.sendRedirect("CustomerRegistration.html");
+		response.sendRedirect("user-form.jsp");
 	}
 
 	private void updateUser(HttpServletRequest request, HttpServletResponse response)
@@ -110,14 +110,14 @@ public class CustomerServlet extends HttpServlet {
 
 		Customers user = new Customers(id, username, email, country, password, phone);
 		customerDao.updateUser(user);
-		response.sendRedirect("Customerlist");
+		response.sendRedirect("user-list.jsp");
 	}
 
 	private void deleteUser(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		customerDao.deleteUser(id);
-		response.sendRedirect("Customerlist");
+		response.sendRedirect("user-list.jsp");
 	}
 
 	
