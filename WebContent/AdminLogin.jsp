@@ -13,7 +13,7 @@
 		
 		<h3>Login Here</h3>
 		<form action="profile/controller/Sign_in_controller.jsp" method="post">
-		Enter User Name
+		Enter Admin Name
 		<input type="text" name="user_name"> <br>
 		Enter Password
 		<input type="password" name="password"><br>

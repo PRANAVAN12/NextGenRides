@@ -7,83 +7,75 @@
 </head>
 <body>
 	<center>
-		<h1>Booking Management</h1>
+		<h1>Customer Management</h1>
         <h2>
-        	<a href="new">Add New booking</a>
+        	<a href="NewCustomer">Add New Customer</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="list">List All bookings</a>
+        	<a href="CustomerList" >List All Customers</a>
         	
         </h2>
 	</center>
     <div align="center">
 		<c:if test="${user != null}">
-			<form action="update" method="post">
+			<form action="CustomerUpdate" method="post">
         </c:if>
         <c:if test="${user == null}">
-			<form action="insert" method="post">
+			<form action="InsertCustomer" method="post">
         </c:if>
         <table border="1" cellpadding="5">
             <caption>
             	<h2>
-            		<c:if test="${user != null}">
+            		<c:if test="${customer != null}">
             			Edit User
             		</c:if>
-            		<c:if test="${user == null}">
-            			Add New User
+            		<c:if test="${customer == null}">
+            			Add New Customer
             		</c:if>
             	</h2>
             </caption>
         		<c:if test="${user != null}">
-        			<input type="hidden" name="id" value="<c:out value='${user.id}' />" />
+        			<input type="hidden" name="id" value="<c:out value='${customer.id}' />" />
         		</c:if>            
             <tr>
                 <th>User Name: </th>
                 <td>
                 	<input type="text" name="username" size="45"
-                			value="<c:out value='${user.username}' />"
+                			value="<c:out value='${customer.username}' />"
                 		/>
                 </td>
             </tr>
             <tr>
-                <th>Rent_date: </th>
+                <th>Email: </th>
                 <td>
-                	<input type="text" name="rent_date" size="45"
-                			value="<c:out value='${user.rent_date}' />"
+                	<input type="text" name="email" size="45"
+                			value="<c:out value='${customer.email}' />"
                 	/>
                 </td>
             </tr>
             <tr>
-                <th>Destination_start: </th>
+                <th>Country</th>
                 <td>
-                	<input type="text" name="destination_start" size="15"
-                			value="<c:out value='${user.destination_start}' />"
+                	<input type="text" name="country" size="15"
+                			value="<c:out value='${customer.country}' />"
                 	/>
                 </td>
             </tr>
             <tr>
-                <th>Destination_end: </th>
+                <th>Password: </th>
                 <td>
-                	<input type="text" name="destination_end" size="15"
-                			value="<c:out value='${user.destination_end}' />"
+                	<input type="text" name="password" size="15"
+                			value="<c:out value='${customer.password}' />"
                 	/>
                 </td>
             </tr>
              <tr>
-                <th>payment: </th>
+                <th>phone: </th>
                 <td>
-                	<input type="text" name="payment" size="15"
-                			value="<c:out value='${user.payment}' />"
+                	<input type="text" name="phone" size="15"
+                			value="<c:out value='${customer.phone}' />"
                 	/>
                 </td>
-            </tr>
-             <tr>
-                <th>bike: </th>
-                <td>
-                	<input type="text" name="bike" size="15"
-                			value="<c:out value='${user.bike}' />"
-                	/>
-                </td>
-            </tr>
+            
             <tr>
             	<td colspan="2" align="center">
             		<input type="submit" value="Save" />
