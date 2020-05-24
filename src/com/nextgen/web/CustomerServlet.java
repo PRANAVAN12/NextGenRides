@@ -11,24 +11,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.nextgen.dao.BikesDao;
-import com.nextgen.model.Bikes;
+import com.nextgen.dao.CustomerDao;
+import com.nextgen.model.Customers;
+import com.nextgen.dao.UserDao;
+import com.nextgen.model.bookings;
 
-@WebServlet("/Bikes")
-public class BikesServlet extends HttpServlet {
+@WebServlet("/Customer")
+public class CustomerServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	private BikesDao bikesDao;
+	private CustomerDao customerDao;
+	
 
 	public void init() {
-
-		bikesDao = new BikesDao();
+		customerDao = new CustomerDao();
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		doGet(request, response);
-	}
+	}	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -36,21 +38,22 @@ public class BikesServlet extends HttpServlet {
 
 		try {
 			switch (action) {
-			case "/new":
+			case "/newU":
 				showNewForm(request, response);
 				break;
-			case "/insert":
+			case "/insertU":
 				insertUser(request, response);
 				break;
-			case "/delete":
+			case "/deleteU":
 				deleteUser(request, response);
 				break;
-			case "/edit":
+			case "/editU":
 				showEditForm(request, response);
 				break;
-			case "/update":
+			case "/updateU":
 				updateUser(request, response);
 				break;
+			
 			default:
 				listUser(request, response);
 				break;
@@ -62,7 +65,7 @@ public class BikesServlet extends HttpServlet {
 
 	private void listUser(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException {
-		List<Bikes> listUser = bikesDao.getAllUser();
+		List<Customers> listUser = customerDao.getAllUser();
 		request.setAttribute("listUser", listUser);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("user-list.jsp");
 		dispatcher.forward(request, response);
@@ -77,39 +80,46 @@ public class BikesServlet extends HttpServlet {
 	private void showEditForm(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
-		Bikes existingUser = bikesDao.getUser(id);
+		Customers existingUser = customerDao.getUser(id);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
-		request.setAttribute("user", existingUser);
+		request.setAttribute("customer", existingUser);
 		dispatcher.forward(request, response);
 
 	}
 
-	private void insertUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
-		String bikename = request.getParameter("bikename");
-		String description = request.getParameter("rent_date");
-		int Quantity = Integer.parseInt("Quantity");
-		Float Price = Float.parseFloat("Price");
+	private void insertUser(HttpServletRequest request, HttpServletResponse response)
+			throws SQLException, IOException {
+		String username = request.getParameter("username");
+		String email = request.getParameter("email");
+		String country = request.getParameter("country");
+		String password = request.getParameter("password");
+		String phone = request.getParameter("phone");
 
-		Bikes newUser = new Bikes(bikename, description, Quantity, Price);
-		bikesDao.saveUser(newUser);
-		response.sendRedirect("list");
+		Customers customer = new Customers(username, email, country, password, phone);
+		customerDao.saveUser(customer);
+		response.sendRedirect("user-form.jsp");
 	}
 
-	private void updateUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+	private void updateUser(HttpServletRequest request, HttpServletResponse response)
+			throws SQLException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
-		String bikename = request.getParameter("bikename");
-		String description = request.getParameter("rent_date");
-		int Quantity = Integer.parseInt("Quantity");
-		Float Price = Float.parseFloat("Price");
+		String username = request.getParameter("username");
+		String email = request.getParameter("email");
+		String country = request.getParameter("country");
+		String password = request.getParameter("password");
+		String phone = request.getParameter("phone");
 
-		Bikes user = new Bikes(id, bikename, description, Quantity, Price);
-		bikesDao.updateUser(user);
-		response.sendRedirect("list");
+		Customers user = new Customers(id, username, email, country, password, phone);
+		customerDao.updateUser(user);
+		response.sendRedirect("user-list.jsp");
 	}
 
-	private void deleteUser(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+	private void deleteUser(HttpServletRequest request, HttpServletResponse response)
+			throws SQLException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
-		bikesDao.deleteUser(id);
-		response.sendRedirect("list");
+		customerDao.deleteUser(id);
+		response.sendRedirect("user-list.jsp");
 	}
+
+	
 }

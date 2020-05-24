@@ -8,11 +8,11 @@ import org.hibernate.Transaction;
 import com.nextgen.model.Customers;
 import com.nextgen.utl.HibernateUtil;
 
-
 public class CustomerDao {
-	
+
 	/**
 	 * Save User
+	 * 
 	 * @param user
 	 */
 	public void saveUser(Customers customer) {
@@ -34,6 +34,7 @@ public class CustomerDao {
 
 	/**
 	 * Update User
+	 * 
 	 * @param user
 	 */
 	public void updateUser(Customers customer) {
@@ -55,6 +56,7 @@ public class CustomerDao {
 
 	/**
 	 * Delete User
+	 * 
 	 * @param id
 	 */
 	public void deleteUser(int id) {
@@ -83,6 +85,7 @@ public class CustomerDao {
 
 	/**
 	 * Get User By ID
+	 * 
 	 * @param id
 	 * @return
 	 */
@@ -105,23 +108,25 @@ public class CustomerDao {
 		}
 		return customer;
 	}
-	
+
 	/**
 	 * Get all Users
+	 * 
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
 	public List<Customers> getAllUser() {
-
+		
+		
 		Transaction transaction = null;
 		List<Customers> listOfUser = null;
 		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
 			// start a transaction
 			transaction = session.beginTransaction();
 			// get an user object
-			
-			listOfUser = session.createQuery("from customers").getResultList();
-			
+
+			listOfUser = session.createQuery("select * from customers").getResultList();
+
 			// commit transaction
 			transaction.commit();
 		} catch (Exception e) {
@@ -132,4 +137,28 @@ public class CustomerDao {
 		}
 		return listOfUser;
 	}
-}
+	public boolean validate(String userName, String password) {
+
+        Transaction transaction = null;
+        Customers customer = null;
+        try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+            // start a transaction
+            transaction = session.beginTransaction();
+            // get an user object
+            customer = (Customers) session.createQuery("FROM customers U WHERE U.username = :userName").setParameter("userName", userName)
+                .uniqueResult();
+
+            if (customer != null && customer.getPassword().equals(password)) {
+                return true;
+            }
+            // commit transaction
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+        }
+        return false;
+    }
+	}
