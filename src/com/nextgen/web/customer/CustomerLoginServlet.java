@@ -25,7 +25,7 @@ public class CustomerLoginServlet extends HttpServlet {
 
 	    protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	    throws ServletException, IOException {
-	        response.sendRedirect("login.jsp");
+	        response.sendRedirect("Login.html");
 	    }
 
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -44,7 +44,7 @@ public class CustomerLoginServlet extends HttpServlet {
 	        String password = request.getParameter("password");
 
 	        if (loginDao.validate(username, password)) {
-	            RequestDispatcher dispatcher = request.getRequestDispatcher("index.html");
+	            RequestDispatcher dispatcher = request.getRequestDispatcher("CustomerHome.html");
 	            dispatcher.forward(request, response);
 	        } else {
 	            throw new Exception("Login not successful..");

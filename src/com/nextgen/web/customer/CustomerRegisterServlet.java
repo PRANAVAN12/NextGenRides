@@ -30,7 +30,7 @@ public class CustomerRegisterServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        response.sendRedirect("register.jsp");
+        response.sendRedirect("register.html");
     }
 
     private void register(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
@@ -51,7 +51,7 @@ public class CustomerRegisterServlet extends HttpServlet {
 
         userDao.saveUser(user);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("Login.html");
         dispatcher.forward(request, response);
     }
 }
