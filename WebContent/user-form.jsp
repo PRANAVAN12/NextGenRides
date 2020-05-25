@@ -45,7 +45,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Rent_date: </th>
+                <th>PickUp_date: </th>
                 <td>
                 	<input type="text" name="rent_date" size="45"
                 			value="<c:out value='${user.rent_date}' />"
@@ -53,21 +53,14 @@
                 </td>
             </tr>
             <tr>
-                <th>Destination_start: </th>
+                <th>PickUp Point: </th>
                 <td>
                 	<input type="text" name="destination_start" size="15"
                 			value="<c:out value='${user.destination_start}' />"
                 	/>
                 </td>
             </tr>
-            <tr>
-                <th>Destination_end: </th>
-                <td>
-                	<input type="text" name="destination_end" size="15"
-                			value="<c:out value='${user.destination_end}' />"
-                	/>
-                </td>
-            </tr>
+            
              <tr>
                 <th>payment: </th>
                 <td>
@@ -79,7 +72,7 @@
              <tr>
                 <th>bike: </th>
                 <td>
-                	<input type="text" name="bike" size="15"
+                	<input type="hidden" name="bike" size="15"
                 			value="<c:out value='${user.bike}' />"
                 	/>
                 </td>

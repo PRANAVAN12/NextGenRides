@@ -36,8 +36,9 @@ public class BikesInsertServlet extends HttpServlet {
 		String description = request.getParameter("rent_date");
 		int Quantity = Integer.parseInt("Quantity");
 		Float Price = Float.parseFloat("Price");
+		String img = request.getParameter("img");
 
-		Bikes newUser = new Bikes(bikename, description, Quantity, Price);
+		Bikes newUser = new Bikes(bikename, description, Quantity, Price, img);
 		bikesDao.saveUser(newUser);
 		response.sendRedirect("list");
 

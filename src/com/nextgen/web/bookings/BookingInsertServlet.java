@@ -35,11 +35,10 @@ public class BookingInsertServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String rent_date = request.getParameter("rent_date");
 		String destination_start = request.getParameter("destination_start");
-		String destination_end = request.getParameter("destination_end");
-		String payment = request.getParameter("payment");
+		Float payment = Float.parseFloat("payment");
 		String bike = request.getParameter("bike");
 
-		bookings newUser = new bookings(username, rent_date, destination_start, destination_end, payment, bike);
+		bookings newUser = new bookings(username, rent_date, destination_start, payment, bike);
 		userDao.saveUser(newUser);
 		response.sendRedirect("/BookingList");
 

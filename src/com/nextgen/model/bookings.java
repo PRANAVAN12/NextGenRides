@@ -25,11 +25,8 @@ public class bookings {
 	@Column(name = "destination_start")
 	protected String destination_start;
 
-	@Column(name = "destination_end")
-	protected String destination_end;
-
 	@Column(name = "payment")
-	protected String payment;
+	protected Float payment;
 
 	@Column(name = "bike")
 	protected String bike;
@@ -37,25 +34,25 @@ public class bookings {
 	public bookings() {
 	}
 
-	public bookings(String username, String rent_date, String destination_start, String destination_end, String payment,
+	public bookings(String username, String rent_date, String destination_start,  Float payment,
 			String bike) {
 		super();
 		this.username = username;
 		this.rent_date = rent_date;
 		this.destination_start = destination_start;
-		this.destination_end = destination_end;
+		
 		this.payment = payment;
 		this.bike = bike;
 
 	}
-	public bookings(int id,String username, String rent_date, String destination_start, String destination_end, String payment,
+	public bookings(int id,String username, String rent_date, String destination_start, Float payment,
 			String bike) {
 		super();
 		this.id=id;
 		this.username = username;
 		this.rent_date = rent_date;
 		this.destination_start = destination_start;
-		this.destination_end = destination_end;
+		
 		this.payment = payment;
 		this.bike = bike;
 
@@ -93,19 +90,13 @@ public class bookings {
 		this.destination_start = destination_start;
 	}
 
-	public String getDestination_end() {
-		return destination_end;
-	}
+	
 
-	public void setDestination_end(String destination_end) {
-		this.destination_end = destination_end;
-	}
-
-	public String getPayment() {
+	public Float getPayment() {
 		return payment;
 	}
 
-	public void setPayment(String payment) {
+	public void setPayment(Float payment) {
 		this.payment = payment;
 	}
 

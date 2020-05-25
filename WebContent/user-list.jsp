@@ -21,9 +21,9 @@
             <tr>
                 <th>ID</th>
                 <th>UserName</th>
-                <th>Rent_date</th>
-                <th>destination_start</th>
-                <th>destination_end</th>
+                <th>PickUp_date</th>
+                <th>PickUp_Point</th>
+                
                 <th>payment</th>
                 <th>bike</th>
                 <th>Actions</th>
@@ -34,7 +34,7 @@
                     <td><c:out value="${user.username}" /></td>
                     <td><c:out value="${user.rent_date}" /></td>
                     <td><c:out value="${user.destination_start}" /></td>
-                    <td><c:out value="${user.destination_end}" /></td>
+                 
                     <td><c:out value="${user.payment}" /></td>
                     <td><c:out value="${user.bike}" /></td>
                     <td>

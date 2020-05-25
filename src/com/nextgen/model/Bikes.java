@@ -18,6 +18,9 @@ public class Bikes {
 
 	@Column(name = "bikename")
 	protected String bikename;
+	
+	@Column(name = "bikeimg")
+	protected String bikeimg;
 
 	@Column(name = "description")
 	protected String description;
@@ -33,23 +36,24 @@ public class Bikes {
 	public Bikes() {
 	}
 
-	public Bikes(String bikename, String description, int Quantity, Float Price) {
+	public Bikes(String bikename, String description, int Quantity, Float Price ,String bikeimg) {
 		super();
 		this.bikename = bikename;
 		this.description = description;
 		this.Quantity = Quantity;
 		this.Price = Price;
+		this.bikeimg=bikeimg;
 		
 
 	}
-	public Bikes(int id,String bikename, String description, int Quantity, Float Price) {
+	public Bikes(int id,String bikename, String description, int Quantity, Float Price,String bikeimg) {
 		super();
 		this.id=id;
 		this.bikename = bikename;
 		this.description = description;
 		this.Quantity = Quantity;
 		this.Price = Price;
-		
+		this.bikeimg=bikeimg;
 
 	}
 
