@@ -9,18 +9,18 @@
 	<center>
 		<h1>Booking Management</h1>
         <h2>
-        	<a href="new">Add New booking</a>
+        	<a href="BookingNew">Add New booking</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="list">List All bookings</a>
+        	<a href="BookingList">List All bookings</a>
         	
         </h2>
 	</center>
     <div align="center">
 		<c:if test="${user != null}">
-			<form action="update" method="post">
+			<form action="BookingUpdate" method="post">
         </c:if>
         <c:if test="${user == null}">
-			<form action="insert" method="post">
+			<form action="BookingInsert" method="post">
         </c:if>
         <table border="1" cellpadding="5">
             <caption>
@@ -86,7 +86,7 @@
             </tr>
             <tr>
             	<td colspan="2" align="center">
-            		<input type="submit" value="Save" />
+            		<input type="submit"  />
             	</td>
             </tr>
         </table>

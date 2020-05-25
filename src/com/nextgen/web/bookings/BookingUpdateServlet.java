@@ -42,7 +42,7 @@ public class BookingUpdateServlet extends HttpServlet {
 
 		bookings user = new bookings(id, username, rent_date, destination_start, destination_end, payment, bike);
 		userDao.updateUser(user);
-		response.sendRedirect("list");
+		response.sendRedirect("/BookingList");
 
 	}
 

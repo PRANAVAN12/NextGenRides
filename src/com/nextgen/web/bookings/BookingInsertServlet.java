@@ -41,7 +41,7 @@ public class BookingInsertServlet extends HttpServlet {
 
 		bookings newUser = new bookings(username, rent_date, destination_start, destination_end, payment, bike);
 		userDao.saveUser(newUser);
-		response.sendRedirect("list");
+		response.sendRedirect("/BookingList");
 
 	}
 

@@ -16,10 +16,10 @@
         </h2>
 	</center>
     <div align="center">
-		<c:if test="${user != null}">
+		<c:if test="${customer != null}">
 			<form action="CustomerUpdate" method="post">
         </c:if>
-        <c:if test="${user == null}">
+        <c:if test="${customer == null}">
 			<form action="InsertCustomer" method="post">
         </c:if>
         <table border="1" cellpadding="5">
@@ -78,7 +78,7 @@
             
             <tr>
             	<td colspan="2" align="center">
-            		<input type="submit" value="Save" />
+            		<input type="submit"  />
             	</td>
             </tr>
         </table>

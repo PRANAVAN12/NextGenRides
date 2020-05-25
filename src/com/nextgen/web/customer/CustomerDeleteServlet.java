@@ -33,7 +33,7 @@ public class CustomerDeleteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		customerDao.deleteUser(id);
-		response.sendRedirect("Customerlist");
+		response.sendRedirect("/CustomerList");
 
 	}
 

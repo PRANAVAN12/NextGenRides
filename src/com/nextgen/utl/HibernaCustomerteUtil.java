@@ -11,7 +11,7 @@ import org.hibernate.service.ServiceRegistry;
 import com.nextgen.model.bookings;
 import com.nextgen.model.Customers;
 
-public class HibernateUtil {
+public class HibernaCustomerteUtil {
 	private static SessionFactory sessionFactory;
 
 	public static SessionFactory getSessionFactory() {
@@ -31,11 +31,12 @@ public class HibernateUtil {
 
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 
-				settings.put(Environment.HBM2DDL_AUTO, "create Booking drop");
+				settings.put(Environment.HBM2DDL_AUTO, "createCustomerdrop");
+				settings.put(Environment.HBM2DDL_AUTO, "update");
 
 				configuration.setProperties(settings);
+				configuration.addAnnotatedClass(Customers.class);
 				
-				configuration.addAnnotatedClass(bookings.class);
 				
 				
 

@@ -34,7 +34,7 @@ public class BookingDeleteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		userDao.deleteUser(id);
-		response.sendRedirect("list");
+		response.sendRedirect("/BookingList");
 
 	}
 

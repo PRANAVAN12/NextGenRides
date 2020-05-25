@@ -9,9 +9,9 @@
 	<center>
 		<h1>Booking Management</h1>
         <h2>
-        	<a href="new">Add New booking</a>
+        	<a href="BookingNew">Add New booking</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="list">List All bookings</a>
+        	<a href="BookingList">List All bookings</a>
         	
         </h2>
 	</center>
@@ -38,9 +38,9 @@
                     <td><c:out value="${user.payment}" /></td>
                     <td><c:out value="${user.bike}" /></td>
                     <td>
-                    	<a href="edit?id=<c:out value='${user.id}' />">Edit</a>
+                    	<a href="BookingEdit?id=<c:out value='${user.id}' />">Edit</a>
                     	&nbsp;&nbsp;&nbsp;&nbsp;
-                    	<a href="delete?id=<c:out value='${user.id}' />">Delete</a>                    	
+                    	<a href="BookingDelete?id=<c:out value='${user.id}' />">Delete</a>                    	
                     </td>
                 </tr>
             </c:forEach>

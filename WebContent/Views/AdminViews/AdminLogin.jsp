@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Admin Login</title>
 <link rel="stylesheet"
  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -17,8 +17,8 @@
   <form action="<%=request.getContextPath()%>/login" method="post">
 
    <div class="form-group">
-    <label for="uname">User Name:</label> <input type="text"
-     class="form-control" id="username" placeholder="User Name"
+    <label for="uname">Admin Name:</label> <input type="text"
+     class="form-control" id="Adminname" placeholder="Admin Name"
      name="username" required>
    </div>
 

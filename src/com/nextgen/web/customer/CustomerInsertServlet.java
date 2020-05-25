@@ -41,7 +41,7 @@ public class CustomerInsertServlet extends HttpServlet {
 
 		Customers customer = new Customers(username, email, country, password, phone);
 		customerDao.saveUser(customer);
-		response.sendRedirect("Customerlist");
+		response.sendRedirect("/CustomerList");
 
 	}
 

@@ -40,7 +40,7 @@ public class CustomerUpdateServlet extends HttpServlet {
 
 		Customers user = new Customers(id, username, email, country, password, phone);
 		customerDao.updateUser(user);
-		response.sendRedirect("Customerlist");
+		response.sendRedirect("/CustomerList");
 
 	}
 
