@@ -1,4 +1,4 @@
-package com.nextgen.web.bikes;
+package com.nextgen.web.Rideouts;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -11,18 +11,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.nextgen.dao.BikesDao;
-import com.nextgen.model.Bikes;
+import com.nextgen.dao.RideoutsDao;
+import com.nextgen.model.RideOuts;
 
-@WebServlet("/BikesUpdate")
-public class BikesUpdateServlet extends HttpServlet {
+
+@WebServlet("/RidesOutUpdate")
+public class RidesOutUpdateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	private BikesDao bikesDao;
+	private RideoutsDao userDao;
 
 	public void init() {
 
-		bikesDao = new BikesDao();
+		userDao = new RideoutsDao();
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -33,15 +34,16 @@ public class BikesUpdateServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
-		String bikename = request.getParameter("bikename");
-		String description = request.getParameter("rent_date");
-		int Quantity = Integer.parseInt("Quantity");
-		Float Price = Float.parseFloat("Price");
-		String img = request.getParameter("img");
+		String username = request.getParameter("username");
+		String rent_date = request.getParameter("rent_date");
+		String days = request.getParameter("days");
+		Float feedbacks = Float.parseFloat("feedbacks");
+		String bike = request.getParameter("bike");
+		String points = request.getParameter("points");
 
-		Bikes user = new Bikes(id, bikename, description, Quantity, Price,img);
-		bikesDao.updateUser(user);
-		response.sendRedirect("list");
+		RideOuts user = new RideOuts(id, username, rent_date, feedbacks, days, bike,points);
+		userDao.updateUser(user);
+		response.sendRedirect("/RideOutsList");
 
 	}
 

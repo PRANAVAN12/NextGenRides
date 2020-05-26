@@ -14,17 +14,17 @@
 
  <div class="container col-md-8 col-md-offset-3" style="overflow: auto">
   <h1>Login Form</h1>
-  <form action="<%=request.getContextPath()%>/login" method="post">
+  <form action="<%=request.getContextPath()%>/AdminLogin" method="post">
 
    <div class="form-group">
     <label for="uname">Admin Name:</label> <input type="text"
-     class="form-control" id="Adminname" placeholder="Admin Name"
+     class="form-control"  placeholder="Admin Name"
      name="username" required>
    </div>
 
    <div class="form-group">
     <label for="uname">Password:</label> <input type="password"
-     class="form-control" id="password" placeholder="Password"
+     class="form-control"  placeholder="Password"
      name="password" required>
    </div>
 

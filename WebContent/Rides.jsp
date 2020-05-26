@@ -142,7 +142,7 @@ $(document).ready(function(){
             <div class="table-title">
                 <div class="row">
 					<div class="col-sm-6">
-						<h2>Customer <b>Details</b></h2>
+						<h2>RideOuts <b>Details</b></h2>
 					</div>
                     <div class="col-sm-6">
                         <div class="search-box">
@@ -159,26 +159,25 @@ $(document).ready(function(){
                     <tr>
                         <th>ID</th>
                         <th style="width: 22%;">UserName</th>
-                        <th style="width: 22%;">Email</th>
-                        <th>Country</th>
-                        <th>Password</th>
-                        <th>Phone</th>
-                        <th>Actions</th>
+                        <th style="width: 22%;">Rent_date</th>
+                        <th> Rent days</th>
+                        <th>Feedbacks</th>
+                        <th>Bike</th>
+                         <th>Points</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
-                 <c:forEach var="customer" items="${Customerlis}">
+                 <c:forEach var="Rides" items="${Rides}">
                     <tr>
-                        <td><c:out value="${customer.id}" /></td>
-                        <td><c:out value="${customer.username}" /></td>
-                        <td><c:out value="${customer.email}" /></td>
-                        <td><c:out value="${customer.country}" /></td>
-                        <td><c:out value="${customer.password}" /></td>
-                        <td><c:out value="${customer.phone}" /></td>
-                        <td>
-                            <a href="CustomerEdit?id=<c:out value='${customer.id}' />" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="CustomerDelete?id=<c:out value='${customer.id}' />" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
+                        <td><c:out value="${Rides.id}" /></td>
+                        <td><c:out value="${Rides.username}" /></td>
+                        <td><c:out value="${Rides.rent_date}" /></td>
+                        <td><c:out value="${Rides.days}" /></td>
+                        <td><c:out value="${Rides.feedbacks}" /></td>
+                        <td><c:out value="${Rides.bike}" /></td>
+                        <td><c:out value="${Rides.points}" /></td>
+                       
                     </tr>
                 </c:forEach>
                         

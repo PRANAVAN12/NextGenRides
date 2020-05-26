@@ -5,24 +5,23 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.nextgen.model.Bikes;
-import com.nextgen.utl.HibernateBikeUtil;
-import com.nextgen.utl.HibernateUtil;
+import com.nextgen.model.RideOuts;
+import com.nextgen.utl.HibernateRidesUtil;
 
 
-public class BikesDao {
+public class RideoutsDao {
 	
 	/**
-	 * Save Bike
+	 * Save User
 	 * @param user
 	 */
-	public void saveUser(Bikes bikes) {
+	public void saveUser(RideOuts user) {
 		Transaction transaction = null;
-		try (Session session = HibernateBikeUtil.getSessionFactory().openSession()) {
+		try (Session session = HibernateRidesUtil.getSessionFactory().openSession()) {
 			// start a transaction
 			transaction = session.beginTransaction();
 			// save the student object
-			session.save(bikes);
+			session.save(user);
 			// commit transaction
 			transaction.commit();
 		} catch (Exception e) {
@@ -34,16 +33,16 @@ public class BikesDao {
 	}
 
 	/**
-	 * Update Bike
+	 * Update User
 	 * @param user
 	 */
-	public void updateUser(Bikes bikes) {
+	public void updateUser(RideOuts user) {
 		Transaction transaction = null;
-		try (Session session = HibernateBikeUtil.getSessionFactory().openSession()) {
+		try (Session session = HibernateRidesUtil.getSessionFactory().openSession()) {
 			// start a transaction
 			transaction = session.beginTransaction();
 			// save the student object
-			session.update(bikes);
+			session.update(user);
 			// commit transaction
 			transaction.commit();
 		} catch (Exception e) {
@@ -55,20 +54,20 @@ public class BikesDao {
 	}
 
 	/**
-	 * Delete Bike
+	 * Delete User
 	 * @param id
 	 */
 	public void deleteUser(int id) {
 
 		Transaction transaction = null;
-		try (Session session = HibernateBikeUtil.getSessionFactory().openSession()) {
+		try (Session session = HibernateRidesUtil.getSessionFactory().openSession()) {
 			// start a transaction
 			transaction = session.beginTransaction();
 
 			// Delete a user object
-			Bikes bikes = session.get(Bikes.class, id);
-			if (bikes != null) {
-				session.delete(bikes);
+			RideOuts user = session.get(RideOuts.class, id);
+			if (user != null) {
+				session.delete(user);
 				System.out.println("user is deleted");
 			}
 
@@ -87,15 +86,15 @@ public class BikesDao {
 	 * @param id
 	 * @return
 	 */
-	public Bikes getUser(int id) {
+	public RideOuts getUser(int id) {
 
 		Transaction transaction = null;
-		Bikes bikes = null;
-		try (Session session = HibernateUtil.getSessionFactory().openSession()) {
+		RideOuts user = null;
+		try (Session session = HibernateRidesUtil.getSessionFactory().openSession()) {
 			// start a transaction
 			transaction = session.beginTransaction();
 			// get an user object
-			bikes = session.get(Bikes.class, id);
+			user = session.get(RideOuts.class, id);
 			// commit transaction
 			transaction.commit();
 		} catch (Exception e) {
@@ -104,24 +103,24 @@ public class BikesDao {
 			}
 			e.printStackTrace();
 		}
-		return bikes;
+		return user;
 	}
 	
 	/**
-	 * Get all Bikes
+	 * Get all Users
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	public List<Bikes> getAllUser() {
+	public List<RideOuts> getAllUser() {
 
 		Transaction transaction = null;
-		List<Bikes> listOfUser = null;
-		try (Session session = HibernateBikeUtil.getSessionFactory().openSession()) {
+		List<RideOuts> listOfUser = null;
+		try (Session session = HibernateRidesUtil.getSessionFactory().openSession()) {
 			// start a transaction
 			transaction = session.beginTransaction();
 			// get an user object
 			
-			listOfUser = session.createQuery("from bikes").getResultList();
+			listOfUser = session.createQuery("from rides").getResultList();
 			
 			// commit transaction
 			transaction.commit();

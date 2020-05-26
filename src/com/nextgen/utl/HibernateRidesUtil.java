@@ -8,10 +8,10 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
-import com.nextgen.model.bookings;
-import com.nextgen.model.Customers;
+import com.nextgen.model.RideOuts;
+;
 
-public class HibernaCustomerteUtil {
+public class HibernateRidesUtil {
 	private static SessionFactory sessionFactory;
 
 	public static SessionFactory getSessionFactory() {
@@ -30,11 +30,11 @@ public class HibernaCustomerteUtil {
 
 				settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
 
-				settings.put(Environment.HBM2DDL_AUTO, "createCustomerdrop");
+				settings.put(Environment.HBM2DDL_AUTO, "create Ride outs drop");
 				settings.put(Environment.HBM2DDL_AUTO, "update");
 
 				configuration.setProperties(settings);
-				configuration.addAnnotatedClass(Customers.class);
+				configuration.addAnnotatedClass(RideOuts.class);
 				
 				
 				

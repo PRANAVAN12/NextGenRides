@@ -1,11 +1,15 @@
 package com.nextgen.model;
 
+import java.sql.Blob;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+
 
 @Entity
 @Table(name = "bikes")
@@ -20,7 +24,7 @@ public class Bikes {
 	protected String bikename;
 	
 	@Column(name = "bikeimg")
-	protected String bikeimg;
+	protected Blob bikeimg;
 
 	@Column(name = "description")
 	protected String description;
@@ -36,7 +40,7 @@ public class Bikes {
 	public Bikes() {
 	}
 
-	public Bikes(String bikename, String description, int Quantity, Float Price ,String bikeimg) {
+	public Bikes(String bikename, String description, int Quantity, Float Price ,Blob bikeimg) {
 		super();
 		this.bikename = bikename;
 		this.description = description;
@@ -46,7 +50,7 @@ public class Bikes {
 		
 
 	}
-	public Bikes(int id,String bikename, String description, int Quantity, Float Price,String bikeimg) {
+	public Bikes(int id,String bikename, String description, int Quantity, Float Price,Blob bikeimg) {
 		super();
 		this.id=id;
 		this.bikename = bikename;
@@ -55,6 +59,14 @@ public class Bikes {
 		this.Price = Price;
 		this.bikeimg=bikeimg;
 
+	}
+
+	public Blob getBikeimg() {
+		return bikeimg;
+	}
+
+	public void setBikeimg(Blob bikeimg) {
+		this.bikeimg = bikeimg;
 	}
 
 	public int getId() {
