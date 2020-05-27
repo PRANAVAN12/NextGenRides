@@ -14,7 +14,7 @@
 
  <div class="container col-md-8 col-md-offset-3" style="overflow: auto">
   <h1>Login Form</h1>
-  <form action="<%=request.getContextPath()%>/AdminLogin" method="post">
+  <form action="AdminLogin" method="post">
 
    <div class="form-group">
     <label for="uname">Admin Name:</label> <input type="text"

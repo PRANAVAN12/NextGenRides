@@ -13,8 +13,8 @@ public class Admin {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
-	protected int id;
+	@Column(name = "admin_id")
+	protected int admin_id;
 
 	@Column(name = "username")
 	protected String username;
@@ -22,19 +22,19 @@ public class Admin {
 	@Column(name = "password")
 	protected String password;
 
-	public Admin(int id, String username, String password) {
+	public Admin(int admin_id, String username, String password) {
 		super();
-		this.id = id;
+		this.admin_id = admin_id;
 		this.username = username;
 		this.password = password;
 	}
 
 	public int getId() {
-		return id;
+		return admin_id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(int admin_id) {
+		this.admin_id = admin_id;
 	}
 
 	public String getUsername() {

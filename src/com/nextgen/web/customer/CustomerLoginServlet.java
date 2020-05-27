@@ -25,7 +25,7 @@ public class CustomerLoginServlet extends HttpServlet {
 
 	    protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	    throws ServletException, IOException {
-	        response.sendRedirect("Login.html");
+	        response.sendRedirect("CustomerHome.html");
 	    }
 
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response)

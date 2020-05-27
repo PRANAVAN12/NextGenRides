@@ -34,7 +34,7 @@ public class BookingListServlet extends HttpServlet {
 			throws ServletException, IOException {
 		List<bookings> listUser = userDao.getAllUser();
 		request.setAttribute("listUser", listUser);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("user-list.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("BookingManagment.jsp");
 		dispatcher.forward(request, response);
 
 	}

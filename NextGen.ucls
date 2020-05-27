@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
+  router="FAN">  
+  <class id="1" language="java" name="com.nextgen.dao.UserDao" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/UserDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="159" x="10459" y="572"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.nextgen.dao.RideoutsDao" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/RideoutsDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="160" x="5837" y="572"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.nextgen.dao.FileUploadDao" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/FileUploadDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="215" x="1165" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.nextgen.dao.CustomerDao" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/CustomerDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="171" x="8140" y="572"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.nextgen.dao.DB_Connection" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/DB_Connection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="160" x="3268" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.nextgen.dao.BikesDao" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/BikesDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="142" x="4197" y="572"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.nextgen.dao.AdminDao" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/dao/AdminDao.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="171" x="2914" y="572"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.nextgen.model.Admin" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/model/Admin.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="150" x="1664" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.nextgen.model.Bikes" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/model/Bikes.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="197" x="3468" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.nextgen.model.bookings" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/model/bookings.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="238" x="577" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.nextgen.model.Customers" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/model/Customers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="252" x="285" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.nextgen.model.RideOuts" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/model/RideOuts.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="270" x="855" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.nextgen.utl.HibernaCustomerteUtil" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/utl/HibernaCustomerteUtil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="204" x="2670" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.nextgen.utl.HibernateAdminUtil" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/utl/HibernateAdminUtil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="204" x="2426" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.nextgen.utl.HibernateBikeUtil" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/utl/HibernateBikeUtil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="204" x="1420" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.nextgen.utl.HibernateRidesUtil" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/utl/HibernateRidesUtil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="204" x="1854" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.nextgen.utl.HibernateUtil" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/utl/HibernateUtil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="204" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.nextgen.web.AdminLoginServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/AdminLoginServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="314" x="2914" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.nextgen.web.HomeServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/HomeServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="288" x="2098" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.nextgen.web.bikes.BikesDeleteServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bikes/BikesDeleteServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="3705" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.nextgen.web.bikes.BikesEditServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bikes/BikesEditServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="4689" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.nextgen.web.bikes.BikesListServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bikes/BikesListServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="4361" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.nextgen.web.bikes.BikesNewServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bikes/BikesNewServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="4033" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.nextgen.web.bookings.BookingDeleteServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bookings/BookingDeleteServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="10295" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.nextgen.web.bookings.BookingEditServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bookings/BookingEditServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="10951" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.nextgen.web.bookings.BookingInsertServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bookings/BookingInsertServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="9639" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.nextgen.web.bookings.BookingListServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bookings/BookingListServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="9967" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.nextgen.web.bookings.BookingNewServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bookings/BookingNewServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="10623" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.nextgen.web.bookings.BookingUpdateServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/bookings/BookingUpdateServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="11279" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="com.nextgen.web.customer.CustomerDeleteServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerDeleteServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="7969" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.nextgen.web.customer.CustomerEditServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerEditServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="8297" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="com.nextgen.web.customer.CustomerInsertServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerInsertServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="8979" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.nextgen.web.customer.CustomerListServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerListServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="7641" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="com.nextgen.web.customer.CustomerLoginServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerLoginServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="314" x="8625" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="com.nextgen.web.customer.CustomerNewServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerNewServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="7313" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.nextgen.web.customer.CustomerRegisterServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerRegisterServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="292" x="9307" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="com.nextgen.web.customer.CustomerUpdateServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/customer/CustomerUpdateServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="6985" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="com.nextgen.web.Rideouts.RideOutsEditServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/Rideouts/RideOutsEditServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="5345" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="com.nextgen.web.Rideouts.RideOutsInsertServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/Rideouts/RideOutsInsertServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="6329" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="com.nextgen.web.Rideouts.RideOutsListServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/Rideouts/RideOutsListServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="5017" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="com.nextgen.web.Rideouts.RidesDeleteServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/Rideouts/RidesDeleteServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="6001" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="com.nextgen.web.Rideouts.RideoutsNewServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/Rideouts/RideoutsNewServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="5673" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="com.nextgen.web.Rideouts.RidesOutUpdateServlet" project="Project_dem" 
+    file="/Project_dem/src/com/nextgen/web/Rideouts/RidesOutUpdateServlet.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="288" x="6657" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="44">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="45" name="customerDao"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="48" name="loginDao"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="50">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="51" name="userDao"/>      
+      <multiplicity id="52" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="53">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="54" name="RidesDao"/>      
+      <multiplicity id="55" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="56">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="57" name="userDao"/>      
+      <multiplicity id="58" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="60" name="customerDao"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="63" name="bikesDao"/>      
+      <multiplicity id="64" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="66" name="userDao"/>      
+      <multiplicity id="67" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="69" name="userDao"/>      
+      <multiplicity id="70" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="72" name="bikesDao"/>      
+      <multiplicity id="73" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="74">    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="75" name="customerDao"/>      
+      <multiplicity id="76" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="78" name="userDao"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="81" name="userDao"/>      
+      <multiplicity id="82" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="83">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="84" name="userDao"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="86">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="87" name="userDao"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="89">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="90" name="userDao"/>      
+      <multiplicity id="91" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="92">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="93" name="customerDao"/>      
+      <multiplicity id="94" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="95">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="96" name="userDao"/>      
+      <multiplicity id="97" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="98">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="99" name="userDao"/>      
+      <multiplicity id="100" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="101">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="102" name="customerDao"/>      
+      <multiplicity id="103" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="104">    
+    <end type="SOURCE" refId="34" navigable="false">      
+      <attribute id="105" name="loginDao"/>      
+      <multiplicity id="106" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="107">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="108" name="userDao"/>      
+      <multiplicity id="109" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="110">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="111" name="bikesDao"/>      
+      <multiplicity id="112" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="113">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="114" name="customerDao"/>      
+      <multiplicity id="115" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="116">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="117" name="bikesDao"/>      
+      <multiplicity id="118" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

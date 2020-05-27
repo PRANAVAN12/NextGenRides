@@ -17,7 +17,7 @@ public class Bikes {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "bikes_id")
 	protected int id;
 
 	@Column(name = "bikename")

@@ -9,18 +9,18 @@
 	<center>
 		<h1>Customer Management</h1>
         <h2>
-        	<a href="NewCustomer">Add New Customer</a>
+        	<a href="<%=request.getContextPath()%>/NewCustomer">Add New Customer</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="CustomerList" >List All Customers</a>
+        	<a href="<%=request.getContextPath()%>/CustomerList" >List All Customers</a>
         	
         </h2>
 	</center>
     <div align="center">
 		<c:if test="${customer != null}">
-			<form action="CustomerUpdate" method="post">
+			<form action="<%=request.getContextPath()%>/CustomerUpdate" method="post">
         </c:if>
         <c:if test="${customer == null}">
-			<form action="InsertCustomer" method="post">
+			<form action="<%=request.getContextPath()%>/InsertCustomer" method="post">
         </c:if>
         <table border="1" cellpadding="5">
             <caption>

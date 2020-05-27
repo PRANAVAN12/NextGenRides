@@ -13,7 +13,7 @@ public class Customers {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "Cus_id")
 	protected int id;
 
 	@Column(name = "username")

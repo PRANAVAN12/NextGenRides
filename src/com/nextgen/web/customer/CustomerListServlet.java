@@ -36,7 +36,7 @@ public class CustomerListServlet extends HttpServlet {
 			throws ServletException, IOException {
 		List<Customers> customer = customerDao.getAllUser();
 		request.setAttribute("Customerlis", customer);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("Customer-list.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("CustomerManagement.jsp");
 		dispatcher.forward(request, response);
 
 		

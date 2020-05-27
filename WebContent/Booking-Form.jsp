@@ -114,7 +114,7 @@
             <input type="text" class="form-control" name="destination_start" required="required">
         </div>
 		<div class="form-group">
-			<label>Payment</label>
+			<label>Days</label>
             <input type="number" class="form-control" name="payment" required="required">
         </div>    
         <div class="form-group">

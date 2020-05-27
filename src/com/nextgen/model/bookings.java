@@ -13,7 +13,7 @@ public class bookings {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "booking_id")
 	protected int id;
 
 	@Column(name = "username")
@@ -25,8 +25,8 @@ public class bookings {
 	@Column(name = "destination_start")
 	protected String destination_start;
 
-	@Column(name = "payment")
-	protected Float payment;
+	@Column(name = "Days")
+	protected Float days;
 
 	@Column(name = "bike")
 	protected String bike;
@@ -34,26 +34,25 @@ public class bookings {
 	public bookings() {
 	}
 
-	public bookings(String username, String rent_date, String destination_start,  Float payment,
-			String bike) {
+	public bookings(String username, String rent_date, String destination_start, Float days, String bike) {
 		super();
 		this.username = username;
 		this.rent_date = rent_date;
 		this.destination_start = destination_start;
-		
-		this.payment = payment;
+
+		this.days = days;
 		this.bike = bike;
 
 	}
-	public bookings(int id,String username, String rent_date, String destination_start, Float payment,
-			String bike) {
+
+	public bookings(int id, String username, String rent_date, String destination_start, Float days, String bike) {
 		super();
-		this.id=id;
+		this.id = id;
 		this.username = username;
 		this.rent_date = rent_date;
 		this.destination_start = destination_start;
-		
-		this.payment = payment;
+
+		this.days = days;
 		this.bike = bike;
 
 	}
@@ -90,14 +89,12 @@ public class bookings {
 		this.destination_start = destination_start;
 	}
 
-	
-
-	public Float getPayment() {
-		return payment;
+	public Float getDays() {
+		return days;
 	}
 
-	public void setPayment(Float payment) {
-		this.payment = payment;
+	public void setDays(Float days) {
+		this.days = days;
 	}
 
 	public String getBike() {

@@ -9,9 +9,9 @@
 	<center>
 		<h1>Customer Management</h1>
         <h2>
-        	<a href="NewCustomer">Add New Customer</a>
+        	<a href="<%=request.getContextPath()%>/NewCustomer">Add New Customer</a>
         	&nbsp;&nbsp;&nbsp;
-        	<a href="CustomerList">List All Customer</a>
+        	<a href="<%=request.getContextPath()%>/CustomerList">List All Customer</a>
         	
         </h2>
 	</center>
@@ -38,9 +38,9 @@
                     <td><c:out value="${customer.phone}" /></td>
                    
                     <td>
-                    	<a href="CustomerEdit?id=<c:out value='${customer.id}' />">Edit</a>
+                    	<a href="<%=request.getContextPath()%>/CustomerEdit?id=<c:out value='${customer.id}' />">Edit</a>
                     	&nbsp;&nbsp;&nbsp;&nbsp;
-                    	<a href="CustomerDelete?id=<c:out value='${customer.id}' />">Delete</a>                    	
+                    	<a href="<%=request.getContextPath()%>/CustomerDelete?id=<c:out value='${customer.id}' />">Delete</a>                    	
                     </td>
                 </tr>
             </c:forEach>

@@ -9,12 +9,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Rides")
+@Table(name = "rides")
 public class RideOuts {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
+	@Column(name = "rides_id")
 	protected int id;
 
 	@Column(name = "username")

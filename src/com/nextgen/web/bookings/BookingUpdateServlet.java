@@ -36,7 +36,7 @@ public class BookingUpdateServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String rent_date = request.getParameter("rent_date");
 		String destination_start = request.getParameter("destination_start");
-		Float payment = Float.parseFloat("payment");
+		Float payment = Float.parseFloat("days");
 		String bike = request.getParameter("bike");
 
 		bookings user = new bookings(id, username, rent_date, destination_start, payment, bike);

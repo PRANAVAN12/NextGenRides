@@ -30,7 +30,7 @@ public class CustomerRegisterServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        response.sendRedirect("register.html");
+        response.sendRedirect("Login.html");
     }
 
     private void register(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

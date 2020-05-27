@@ -34,7 +34,7 @@ public class RideOutsEditServlet extends HttpServlet {
 			throws ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
 		RideOuts existingUser = userDao.getUser(id);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("RidesOuts.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("");
 		request.setAttribute("user", existingUser);
 		dispatcher.forward(request, response);
 
